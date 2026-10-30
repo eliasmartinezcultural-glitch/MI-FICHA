@@ -72,7 +72,7 @@
  </div>
 </section>
 </main>
-<footer class="footer wrap"><span><strong>MI FICHA</strong> · El fútbol también merece una historia.</span><span>Proyecto independiente · <a class="donate" href="https://wa.me/?text=Quiero%20colaborar%20con%20MI%20FICHA" target="_blank" rel="noopener">Colaborar voluntariamente</a> · Hecho con pasión por el fútbol.</span></footer>
+<footer class="footer wrap"><span><strong>MI FICHA</strong> · El fútbol también merece una historia.</span><span>Proyecto independiente · Colaboración voluntaria: <strong>ocarina.guitarra</strong> <button class="btn secondary" style="padding:5px 9px;font-size:10px" id="copyAlias" type="button">COPIAR ALIAS</button> · Hecho con pasión por el fútbol.</span></footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script>
 const $=id=>document.getElementById(id);
@@ -116,7 +116,7 @@ $('shareCard').addEventListener('click',async()=>{if(!val('name')){showToast('Co
 $('whatsapp').addEventListener('click',()=>{if(!val('name')){showToast('Completá tu nombre primero.');return}const text='⚽ MI FICHA | '+(val('nickname')||val('name'))+'\n'+(val('position')||'Jugador/a')+' · '+(val('team')||'Libre')+'\n'+([val('city'),val('province')].filter(Boolean).join(', '))+'\nPartidos: '+safeNum('matches')+' | Goles: '+safeNum('goals')+' | Asistencias: '+safeNum('assists')+'\n\nTu fútbol. Tu historia. Tu oportunidad.';window.open('https://wa.me/?text='+encodeURIComponent(text),'_blank','noopener')});
 $('pdf').addEventListener('click',()=>{if(!val('name')){showToast('Completá tu nombre primero.');return}window.print()});
 $('backup').addEventListener('click',()=>{const blob=new Blob([JSON.stringify(data(),null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='mi-ficha-respaldo.json';a.click();URL.revokeObjectURL(a.href);showToast('Respaldo de datos descargado.')});
-loadLocal();update();
+$('copyAlias').addEventListener('click',async()=>{try{await navigator.clipboard.writeText('ocarina.guitarra');showToast('Alias copiado. ¡Gracias por colaborar!')}catch(e){showToast('Alias: ocarina.guitarra')}});\nloadLocal();update();
 </script>
 </body>
 </html>
