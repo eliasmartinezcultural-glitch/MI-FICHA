@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#08130f">
+<meta name="theme-color" content="#111a19">
 <meta name="description" content="MI FICHA: construí tu identidad futbolística, tu carrera y tu tarjeta para compartir. Gratis, desde tu celular.">
 <link rel="manifest" href="manifest.webmanifest">
 <title>MI FICHA — Tu fútbol, tu historia</title>
@@ -17,8 +17,8 @@
 </header>
 <main>
 <section class="hero screen active" id="screen-inicio">
- <div class="hero-copy"><div class="eyebrow">TU CARRERA EMPIEZA ACÁ</div><h1>NO IMPORTA<br>LA CATEGORÍA.<br><em>IMPORTA TU HISTORIA.</em></h1><p>Creá tu identidad futbolística. Diseñá tu tarjeta. Registrá tu camino. Compartilo con el mundo.</p><button class="btn btn-lime btn-big" data-go="perfil">ENTRAR A MI MUNDO <span>↗</span></button><div class="hero-foot"><span>✦ GRATIS</span><span>✦ SIN REGISTRO</span><span>✦ HECHO PARA CELULARES</span></div></div>
- <div class="hero-visual"><div class="stadium-glow"></div><div class="field-ring ring-one"></div><div class="field-ring ring-two"></div><div class="hero-shirt"><span id="heroNumber">10</span></div><div class="hero-sticker">TU FÚTBOL<br><b>TU LEYENDA</b></div><div class="hero-bottom"><span>PLAYER MODE</span><span>SEASON 2026</span></div></div>
+ <div class="hero-copy"><div class="eyebrow">BIENVENIDO AL VESTUARIO</div><h1>TU LUGAR.<br>TU EQUIPO.<br><em>TU HISTORIA.</em></h1><p>Tu ficha de jugador. Tu recorrido. Tus colores. Todo en un solo lugar.</p><button class="btn btn-lime btn-big" data-go="perfil">ENTRAR AL VESTUARIO <span>↗</span></button><div class="hero-foot"><span>✦ GRATIS</span><span>✦ SIN REGISTRO</span><span>✦ HECHO PARA CELULARES</span></div></div>
+ <div class="hero-visual"><div class="stadium-glow"></div><div class="field-ring ring-one"></div><div class="field-ring ring-two"></div><div class="hero-shirt"><span id="heroNumber">10</span></div><div class="hero-sticker">TU FÚTBOL<br><b>TU CAMISETA</b></div><div class="hero-bottom"><span>FICHA DE JUGADOR</span><span>TEMPORADA 2026</span></div></div>
  <div class="quick-stats"><div><b id="homeLevel">01</b><span>NIVEL</span></div><div><b id="homeProgress">0%</b><span>IDENTIDAD CREADA</span></div><div><b id="homeSeason">2026</b><span>TEMPORADA</span></div></div>
 </section>
 <section class="workspace screen" id="screen-perfil">
@@ -45,15 +45,15 @@
  <div class="content-grid"><div class="form-panel">
   <div class="panel-title"><span class="panel-icon">🎨</span><div><b>DISEÑÁ TU TARJETA</b><small>Probá estilos y colores. Mirá el resultado al instante.</small></div></div>
   <div class="option-label">ELEGÍ TU ESTILO</div><div class="theme-options">
-   <button class="theme-option selected" data-theme="night"><span class="theme-swatch sw-night"></span><b>NOCHE DE COPA</b><small>Oscuro · eléctrico</small></button>
-   <button class="theme-option" data-theme="classic"><span class="theme-swatch sw-classic"></span><b>CLÁSICO</b><small>Tradición · cancha</small></button>
-   <button class="theme-option" data-theme="fire"><span class="theme-swatch sw-fire"></span><b>FUEGO</b><small>Intenso · energía</small></button>
-   <button class="theme-option" data-theme="ice"><span class="theme-swatch sw-ice"></span><b>VISITANTE</b><small>Frío · limpio</small></button>
+   <button class="theme-option selected" data-theme="night"><span class="theme-swatch sw-night"></span><b>LOCAL</b><small>Clásico · institucional</small></button>
+   <button class="theme-option" data-theme="classic"><span class="theme-swatch sw-classic"></span><b>VISITANTE</b><small>Claro · tradicional</small></button>
+   <button class="theme-option" data-theme="fire"><span class="theme-swatch sw-fire"></span><b>COPA</b><small>Oscuro · sobrio</small></button>
+   <button class="theme-option" data-theme="ice"><span class="theme-swatch sw-ice"></span><b></small></button>
   </div>
-  <div class="option-label">COLOR DE IDENTIDAD</div><div class="color-options"><button class="color-dot selected" data-color="#b7f34b" style="--dot:#b7f34b" aria-label="Verde lima"></button><button class="color-dot" data-color="#54d7b0" style="--dot:#54d7b0" aria-label="Turquesa"></button><button class="color-dot" data-color="#ffb454" style="--dot:#ffb454" aria-label="Naranja"></button><button class="color-dot" data-color="#ff6685" style="--dot:#ff6685" aria-label="Rosa"></button><button class="color-dot" data-color="#7ca7ff" style="--dot:#7ca7ff" aria-label="Azul"></button><button class="color-dot" data-color="#e9e6d9" style="--dot:#e9e6d9" aria-label="Blanco"></button></div>
+  <div class="option-label">COLORES DEL CLUB</div><div class="color-options"><button class="color-dot selected" data-color="#c5a36b" style="--dot:#c5a36b" aria-label="Dorado clásico"></button><button class="color-dot" data-color="#e6e0d2" style="--dot:#e6e0d2" aria-label="Marfil"></button><button class="color-dot" data-color="#8d3439" style="--dot:#8d3439" aria-label="Bordó"></button><button class="color-dot" data-color="#527a65" style="--dot:#527a65" aria-label="Verde camiseta"></button><button class="color-dot" data-color="#52708a" style="--dot:#52708a" aria-label="Azul camiseta"></button><button class="color-dot" data-color="#b6b9b4" style="--dot:#b6b9b4" aria-label="Plata"></button></div>
   <div class="option-label">DETALLES DE TU CARRERA</div><div class="form-grid"><label class="field"><span>TEMPORADA</span><input id="season" maxlength="15" value="2026"></label><label class="field"><span>ESLOGAN PERSONAL</span><input id="motto" maxlength="32" placeholder="Nunca dejar de jugar"></label></div>
   <div class="panel-actions"><button class="btn btn-lime" data-go="carrera">ARMAR MI HISTORIA →</button></div>
- </div><aside class="side-panel"><div class="mini-title">VISTA PREVIA EN VIVO</div><div class="preview-card" id="previewCard"><div class="preview-top"><b>MI<span>FICHA</span></b><small>PLAYER CARD / 2026</small></div><div class="preview-main"><div class="preview-photo" id="previewPhoto">⚽</div><div class="preview-data"><b class="preview-number" id="previewNumber">10</b><small id="previewPosition">POSICIÓN</small><strong id="previewName">TU NOMBRE</strong><span id="previewTeam">JUGADOR LIBRE</span></div></div><div class="preview-bottom"><span id="previewCity">📍 TU LOCALIDAD</span><b id="previewMotto">EL SUEÑO NO TIENE CATEGORÍA</b></div></div><p class="preview-hint">Esta es una vista previa. En «Mi tarjeta» vas a poder guardar la imagen final en tu teléfono.</p></aside></div>
+ </div><aside class="side-panel"><div class="mini-title">VISTA PREVIA EN VIVO</div><div class="preview-card" id="previewCard"><div class="preview-top"><b>MI<span>FICHA</span></b><small>FICHA OFICIAL · 2026</small></div><div class="preview-main"><div class="preview-photo" id="previewPhoto">⚽</div><div class="preview-data"><b class="preview-number" id="previewNumber">10</b><small id="previewPosition">POSICIÓN</small><strong id="previewName">TU NOMBRE</strong><span id="previewTeam">JUGADOR LIBRE</span></div></div><div class="preview-bottom"><span id="previewCity">📍 TU LOCALIDAD</span><b id="previewMotto">EL SUEÑO NO TIENE CATEGORÍA</b></div></div><p class="preview-hint">Esta es una vista previa. En «Mi tarjeta» vas a poder guardar la imagen final en tu teléfono.</p></aside></div>
 </section>
 <section class="workspace screen" id="screen-carrera">
  <div class="screen-heading"><div><div class="eyebrow">03 / TRAYECTORIA</div><h1>MI CARRERA</h1><p>Cada partido suma. Cada temporada cuenta.</p></div><span class="step-chip">TU CAMINO</span></div>
