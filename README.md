@@ -2,42 +2,44 @@
 
 **Tu fútbol. Tu historia. Tu oportunidad.**
 
-MI FICHA es una herramienta gratuita para que futbolistas amateurs creen una identidad deportiva, registren sus datos y generen una tarjeta para compartir.
+MI FICHA es un mundo futbolista digital, gratuito y pensado primero para teléfonos. Cada jugador puede construir su identidad, personalizar su tarjeta, registrar su camino y compartir una vista de su perfil.
 
-## Primera versión
+## Experiencia
 
-- Diseño adaptable a celulares, tablets y computadoras.
-- Formulario de perfil deportivo con vista previa en vivo.
-- Foto procesada localmente en el navegador.
-- Guardado automático en el dispositivo.
-- Descarga de tarjeta en PNG.
-- Compartir la tarjeta cuando el navegador admite compartir archivos.
-- Mensaje preparado para WhatsApp.
-- Impresión o guardado como PDF desde el navegador.
-- Exportación de respaldo JSON.
-- Directorio inicial de complejos de San Patricio del Chañar.
+- Inicio con estética futbolera inspirada en videojuegos deportivos.
+- Navegación móvil por secciones: Inicio, Perfil, Vestuario, Carrera, Tarjeta y Archivo.
+- Perfil personal con foto, dorsal, posición, pierna hábil, equipo y localidad.
+- Personalización con cuatro estilos visuales y seis colores.
+- Registro de partidos, goles, asistencias, objetivos y enlace a video.
+- Vista previa y tarjeta PNG de alta resolución generada en el dispositivo.
+- Compartir archivo cuando el navegador y el teléfono lo permiten.
+- Enlace de WhatsApp que transporta los datos deportivos de la ficha en el propio enlace, sin subirlos a un servidor. No incluye la foto.
+- Respaldo JSON descargable e importable.
+- Guardado automático local.
+- Diseño adaptable desde 320 px hasta pantallas grandes.
+- Base PWA con manifiesto y caché de archivos para facilitar su uso como aplicación web.
 
-## Publicación con GitHub Pages
+## Publicación
 
 1. Abrí **Settings** en este repositorio.
 2. Entrá en **Pages**.
 3. En **Build and deployment**, elegí **Deploy from a branch**.
 4. Seleccioná la rama **main** y la carpeta **/(root)**.
-5. Guardá los cambios. GitHub publicará el sitio cuando termine el proceso.
+5. Guardá los cambios y esperá a que GitHub termine la publicación.
 
-La dirección esperada será:
+Dirección esperada: https://eliasmartinezcultural-glitch.github.io/MI-FICHA/
 
-https://eliasmartinezcultural-glitch.github.io/MI-FICHA/
+## Datos, privacidad y límites
 
-## Privacidad y límites de esta versión
+- Los datos se guardan en el navegador del dispositivo. No hay cuentas ni servidor.
+- El enlace compartido contiene datos de perfil dentro de la propia dirección URL (nombre, posición, equipo, localidad, estadísticas y personalización). Cualquiera que reciba ese enlace podrá verlos. El enlace no contiene la foto.
+- Para compartir la tarjeta completa con foto, descargá el PNG y adjuntalo, o usá la función nativa de compartir archivos si tu teléfono la admite.
+- El archivo JSON de respaldo contiene todos los datos, incluida la foto. No lo compartas públicamente.
+- Si borrás los datos del navegador o cambiás de dispositivo, recuperá tu ficha importando el respaldo JSON.
+- Las estadísticas son autodeclaradas y no verificadas por clubes, ligas ni federaciones.
+- No publiques domicilio, teléfono personal ni información sensible. Si sos menor, pedí acompañamiento de un adulto responsable antes de compartir fotos o datos.
+- La caché offline necesita que la web se haya abierto al menos una vez con conexión. La primera carga y la instalación de la PWA dependen de GitHub Pages y del navegador.
 
-- Los datos se guardan en el navegador del dispositivo. No se envían a un servidor.
-- La ficha no es un registro oficial ni verifica estadísticas, equipos o identidad.
-- Para usar la ficha en otro dispositivo, descargá el respaldo JSON. La importación de ese respaldo se incorporará en una próxima mejora.
-- WhatsApp recibe un texto preparado. Para enviar la imagen, usá **Compartir** si tu dispositivo ofrece compartir archivos, o descargá el PNG y adjuntalo manualmente.
-- No publiques datos de contacto, domicilio ni información sensible de menores.
-- Los teléfonos y datos de los complejos deben confirmarse antes de considerarlos oficiales.
+## Principio
 
-## Principio del proyecto
-
-Crear, editar, descargar y compartir la ficha debe seguir siendo gratuito. Las colaboraciones son voluntarias y nunca desbloquean funciones esenciales.
+Crear, personalizar, guardar y compartir la ficha es gratuito. Las colaboraciones son voluntarias y nunca desbloquean funciones esenciales.
